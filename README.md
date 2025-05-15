@@ -47,3 +47,6 @@ Ini memungkinkan terjadinya pertukaran pesan langsung: pesan yang dipublish oleh
 
 Running RabbitMQ:
 ![Image](https://github.com/user-attachments/assets/9214da05-4f1f-4a5d-92b8-f2785823e32c)
+
+Screen capture showing consoles:
+![Image](https://github.com/user-attachments/assets/0feb6463-6a6c-4c70-b9db-076e8b7133ce)
