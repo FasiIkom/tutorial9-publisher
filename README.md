@@ -44,3 +44,6 @@ Keduanya terhubung ke message broker yang sama, yaitu RabbitMQ lokal.
 Publisher mengirim pesan ke queue "user_created", dan subscriber (listener) mendengarkan queue yang sama.
 
 Ini memungkinkan terjadinya pertukaran pesan langsung: pesan yang dipublish oleh publisher akan diterima oleh subscriber secara real-time (asinkron).
+
+Running RabbitMQ:
+![Image](https://github.com/user-attachments/assets/9214da05-4f1f-4a5d-92b8-f2785823e32c)
