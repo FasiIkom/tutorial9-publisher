@@ -50,3 +50,6 @@ Running RabbitMQ:
 
 Screen capture showing consoles:
 ![Image](https://github.com/user-attachments/assets/0feb6463-6a6c-4c70-b9db-076e8b7133ce)
+
+![Image](https://github.com/user-attachments/assets/8a2f54f7-3a01-4ab0-9858-97c9e50d1e0d)
+Spike atau lonjakan yang terlihat pada grafik kedua ("Message rates") di RabbitMQ Management UI terjadi karena program publisher dijalankan. Dalam program tersebut, terdapat lima pesan yang dikirimkan ke broker RabbitMQ secara berurutan namun sangat cepat. Pesan-pesan ini dipublikasikan ke antrian dengan routing key "user_created" menggunakan protokol AMQP. Karena kelima pesan ini dikirim dalam waktu yang sangat singkat (hanya dalam satu eksekusi program), RabbitMQ mencatat peningkatan mendadak pada laju pengiriman pesan (publish rate). Hal inilah yang menyebabkan munculnya spike atau puncak tajam dalam grafik publish. Setelah pesan selesai dikirim, laju publish kembali turun ke nol, sehingga grafik kembali datar. Spike ini bisa muncul kembali setiap kali publisher dijalankan ulang karena pola pengiriman pesan yang cepat dan serempak tersebut.
